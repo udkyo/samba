@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache samba samba-common-tools
+RUN apk add --no-cache samba
 
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64 \
     && chmod +x /usr/local/bin/dumb-init
