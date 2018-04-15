@@ -1,7 +1,7 @@
-# samba
+# smb
 Simple samba sharing via docker
 
-Run it with -t, port 445 forwarded, and the folder you want to share mounted at /shared. Optionally, include *user* and *pass* env vars t specify login credentials:
+Run it with -t, port 445 forwarded, and the folder you want to share mounted at /shared. Optionally, include *user* and *pass* env vars to specify login credentials:
 
 `docker run --rm -d -t -p 445:445 -e user=foo -e pass=bar -v /your/local/path:/shared udkyo/smb`
 
